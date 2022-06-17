@@ -37,12 +37,12 @@ export default function Programmers() {
     // It's going to utilize both slices of state to return the _name_ of the featured dev.
     // The beauty of closures is that we can "see" both slices of state from this region
     // of the program, without needing to inject the information through arguments.
-    ProgrammersList.filter(list => {
-    return  list.idOfFeatured
+    const nameOfFeatured = ProgrammersList.filter(list => {
+    return  list.id === idOfFeatured
     })
   };
   // ProgrammersList[0].name
-  console.log(ProgrammersList)
+  // console.log(nameOfFeatured)
 
   const style = {
     fontSize: '1.5em',
