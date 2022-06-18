@@ -34,7 +34,7 @@ export default function Programmers() {
   const getNameOfFeatured = () => {
     const featured = programmers.filter(list => {
       list.id == programmerId
-      return programmerId.name
+      return getNameOfFeatured.name
     })
     console.log(featured)
     // Leave this for last!
