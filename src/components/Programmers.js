@@ -32,11 +32,12 @@ export default function Programmers() {
   // The programmers list on the one hand, and the id of the featured programmer on the other.
 
   const getNameOfFeatured = () => {
-    const featured = programmers.filter(list => {
-      list.id == programmerId
-      return getNameOfFeatured.name
-    })
-    console.log(featured)
+    const featured = programmers.filter(list => 
+      list.id === programmerId
+    )
+     return featured[0].name
+    
+    // console.log(featured)
     // Leave this for last!
     // This is NOT an event handler but a helper function. See its usage inside the JSX.
     // It's going to utilize both slices of state to return the _name_ of the featured dev.
